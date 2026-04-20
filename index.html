@@ -16,15 +16,27 @@ body {
 
 /* HEADER */
 header {
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    background: linear-gradient(135deg, #520331, #c0bfbf);
     color: white;
     text-align: center;
     padding: 60px 20px;
 }
 
+
 header h1 {
     margin: 0;
     font-size: 2.5em;
+    background: linear-gradient(270deg, #f57ca0, #ffd700);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorFlow 5s ease infinite;
+}
+
+@keyframes colorFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 /* SERVICIOS */
@@ -189,7 +201,7 @@ footer {
 
         <!-- CARD 4 -->
         <div class="card">
-            <img src="img/imagen1.jpg">
+            <img src="img/imagen2.jpg">
             <div class="card-content">
                 <h3>Peinado</h3>
                 <p>Peinados elegantes para cualquier ocasión.</p>
@@ -201,7 +213,7 @@ footer {
         </div>
 
         <div class="card">
-            <img src="img/imagen1.jpg">
+            <img src="img/imagen2.jpg">
             <div class="card-content">
                 <h3>Uñas Acrílicas</h3>
                 <p>Diseños elegantes y duraderos.</p>
@@ -266,4 +278,4 @@ window.addEventListener('scroll', () => {
 
 </body>
 </html>
-
+    
