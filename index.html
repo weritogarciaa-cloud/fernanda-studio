@@ -7,7 +7,275 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
+<style><!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salón de Belleza Premium</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 <style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* SERVICIOS */
+.container {
+    padding: 40px 20px;
+}
+
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.card.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.precio {
+    color: #ff4d6d;
+    font-weight: bold;
+}
+
+/* BOTON */
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #25D366, #1ebe5d);
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* TESTIMONIOS */
+.testimonios {
+    background: #fff0f5;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonios h2 {
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    max-width: 500px;
+    margin: 10px auto;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* WHATSAPP FLOTANTE */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 22px;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    animation: float 2s infinite ease-in-out;
+}
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Salón de Belleza</h1>
+    <p>Elegancia y estilo en cada detalle ✨</p>
+</header>
+
+<div class="container">
+    <div class="servicios">
+
+        <!-- CARD 1 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/800x600/?nails">
+            <div class="card-content">
+                <h3>Uñas Acrílicas</h3>
+                <p>Diseños elegantes y duraderos.</p>
+                <p class="precio">$300 MXN</p>
+                <a class="btn" href="https://wa.me/521XXXXXXXXXX?text=Quiero%20uñas">Agendar</a>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/800x600/?hair,salon">
+            <div class="card-content">
+                <h3>Corte de Cabello</h3>
+                <p>Estilo personalizado.</p>
+                <p class="precio">$150 MXN</p>
+                <a class="btn" href="https://wa.me/521XXXXXXXXXX?text=Quiero%20corte">Agendar</a>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/800x600/?makeup">
+            <div class="card-content">
+                <h3>Maquillaje</h3>
+                <p>Para eventos especiales.</p>
+                <p class="precio">$400 MXN</p>
+                <a class="btn" href="https://wa.me/521XXXXXXXXXX?text=Quiero%20maquillaje">Agendar</a>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/800x600/?hair,salon">
+            <div class="card-content">
+                <h3>Peinado</h3>
+                <p>Peinados elegantes para cualquier ocasión.</p>
+                <p class="precio">$200 MXN</p>
+                <a class="btn" href="https://wa.me/521XXXXXXXXXX?text=Quiero%20peinado">Agendar</a>
+            </div>
+
+            
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/800x600/?nails">
+            <div class="card-content">
+                <h3>Uñas Acrílicas</h3>
+                <p>Diseños elegantes y duraderos.</p>
+                <p class="precio">$300 MXN</p>
+                <a class="btn" href="https://wa.me/521XXXXXXXXXX?text=Quiero%20uñas">Agendar</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="C:\Users\RedBlack\Desktop\pestañas\imagenes\imagen1.jpg">
+            <div class="card-content">
+                <h3>Uñas Acrílicas</h3>
+                <p>Diseños elegantes y duraderos.</p>
+                <p class="precio">$300 MXN</p>
+                <a class="btn" href="https://wa.me/521XXXXXXXXXX?text=Quiero%20uñas">Agendar</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- TESTIMONIOS -->
+<section class="testimonios">
+    <h2>Lo que dicen nuestras clientas 💬</h2>
+
+    <div class="testimonial">
+        “Me encantaron mis uñas, súper profesionales”
+    </div>
+
+    <div class="testimonial">
+        “El mejor servicio que he recibido, volveré”
+    </div>
+
+    <div class="testimonial">
+        “Muy buen trato y excelente calidad”
+    </div>
+</section>
+
+<!-- BOTON WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/521XXXXXXXXXX?text=Hola,%20quiero%20información" target="_blank">
+💬
+</a>
+
+<footer>
+    <p>© 2026 Salón de Belleza</p>
+</footer>
+
+<script>
+// animación al hacer scroll
+const cards = document.querySelectorAll('.card');
+
+window.addEventListener('scroll', () => {
+    cards.forEach(card => {
+        const top = card.getBoundingClientRect().top;
+        if(top < window.innerHeight - 50){
+            card.classList.add('show');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
