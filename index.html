@@ -169,6 +169,41 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+.botones-contacto {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-contacto {
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* COLORES INDIVIDUALES */
+.btn-contacto:nth-child(1) {
+    background: #ff4d6d; /* mapa */
+}
+
+.btn-contacto:nth-child(2) {
+    background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7); /* instagram */
+}
+
+.btn-contacto:nth-child(3) {
+    background: #25D366; /* whatsapp */
+}
+
+.btn-contacto:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
 </style>
 </head>
 
@@ -286,6 +321,23 @@ footer {
         </iframe>
     </div>
 </div>
+
+<div class="botones-contacto">
+
+    <a class="btn-contacto" href="https://www.google.com/maps?ll=27.481082,-109.959464&z=16&t=m&hl=es-419&gl=US&mapclient=embed&q=Golfo+P%C3%A9rsico+1816+Terras+85150+Cdad.+Obreg%C3%B3n,+Son.+M%C3%A9xico">
+        📍 Cómo llegar
+    </a>
+
+    <a class="btn-contacto" href="https://www.instagram.com/fernandagutierrezstudio?igsh=bXc0ajl3c2J3Ym9m" target="_blank">
+        📸 Instagram
+    </a>
+
+    <a class="btn-contacto" href="https://wa.me/526444574772?text=Hola%20quiero%20agendar" target="_blank">
+        💬 WhatsApp
+    </a>
+
+</div>
+
 
 
 <!-- BOTON WHATSAPP -->
