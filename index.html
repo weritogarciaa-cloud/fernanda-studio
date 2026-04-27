@@ -486,8 +486,11 @@ window.addEventListener('scroll', () => {
 </style>
 
 <script>
+// BLOQUEAR FECHAS PASADAS (desde que abre la página)
+document.getElementById("fecha").min = new Date().toISOString().split("T")[0];
+
 document.getElementById("form").addEventListener("submit", function(e){
-    document.getElementById("fecha").min = new Date().toISOString().split("T")[0];
+    
 
     e.preventDefault();
 
