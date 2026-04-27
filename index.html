@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fernanda Gutierrez Studio</title>
@@ -131,13 +133,13 @@ header h1 {
 /* WHATSAPP FLOTANTE */
 .whatsapp {
     position: fixed;
-    bottom: 20px;
+    bottom: 5px;
     right: 20px;
     background: #25D366;
     color: white;
-    font-size: 22px;
+    font-size: 10px;
     padding: 15px;
-    border-radius: 50%;
+    border-radius: 10%;
     text-decoration: none;
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     animation: float 2s infinite ease-in-out;
@@ -212,6 +214,7 @@ footer {
 <header>
     <h1>Fernanda Gutierrez Studio</h1>
     <p>Elegancia y estilo en cada detalle ✨</p>
+    
 </header>
 
 <div class="container">
@@ -291,7 +294,7 @@ footer {
 
 <!-- TESTIMONIOS -->
 <section class="testimonios">
-    <h2>Lo que dicen las perrillas 💬</h2>
+    <h2>Lo que dicen las clientas 💬</h2>
 
     <div class="testimonial">
         “Me encantaron mis uñas, súper profesionales”
@@ -342,7 +345,7 @@ footer {
 
 <!-- BOTON WHATSAPP -->
 <a class="whatsapp" href="http://wa.me/526444574772?text=Hola,%20quiero%20información" target="_blank">
-💬
+Agendar por whatsapp💬
 </a>
 
 <footer>
@@ -362,6 +365,59 @@ window.addEventListener('scroll', () => {
     });
 });
 </script>
+
+<section class="formulario">
+  <h2>Agenda tu cita</h2>
+  
+  <form id="form">
+    <input type="text" placeholder="Tu nombre" required>
+    <input type="tel" placeholder="Tu teléfono" required>
+    
+    <select>
+      <option>Selecciona servicio</option>
+      <option>Uñas</option>
+      <option>Pestañas</option>
+      <option>Maquillaje</option>
+    </select>
+
+    <button type="submit" class="btn-main">Reservar</button>
+  </form>
+</section>
+
+<style>
+.formulario {
+    padding: 40px;
+    text-align: center;
+}
+
+.formulario input, .formulario select {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+</style>
+
+<script>
+document.getElementById("form").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let nombre = this[0].value;
+    let telefono = this[1].value;
+    let servicio = this[2].value;
+
+    let mensaje = `Hola, soy ${nombre}, quiero agendar ${servicio}. Mi número es ${telefono}`;
+
+    let url = "https://wa.me/526444574772?text=" + encodeURIComponent(mensaje);
+
+    window.open(url, "_blank");
+});
+</script>
+
+
+
+
 
 </body>
 </html>
