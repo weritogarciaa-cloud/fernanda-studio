@@ -8,6 +8,8 @@
 <title>Fernanda Gutierrez Studio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
 
 <style>
 body {
@@ -84,6 +86,16 @@ header h1 {
     text-align: center;
 }
 
+.card-content h3 {
+    margin-bottom: 5px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #555;
+}
+
+
 
 .precio {
     color: #ff4d6d;
@@ -133,13 +145,13 @@ header h1 {
 /* WHATSAPP FLOTANTE */
 .whatsapp {
     position: fixed;
-    bottom: 5px;
+    bottom: 20px;
     right: 20px;
     background: #25D366;
     color: white;
-    font-size: 10px;
-    padding: 15px;
-    border-radius: 10%;
+    font-size: 14px;
+    padding: 15px 20px;
+    border-radius: 50px;
     text-decoration: none;
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     animation: float 2s infinite ease-in-out;
@@ -206,6 +218,23 @@ footer {
     transform: scale(1.1);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
+
+.btn-main {
+    background: linear-gradient(45deg, #ff4d6d, #c9184a);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
 </style>
 </head>
 
@@ -258,7 +287,7 @@ footer {
             <img src="img/imagen2.jpg">
             <div class="card-content">
                 <h3>Peinado</h3>
-                <p>Peinados elegantes para cualquier ocasión.</p>
+                <p>Peinados elegantes.</p>
                 <p class="precio">$200 MXN</p>
                 <a class="btn" href="https://wa.me/526444574772?text=Quiero%20corte">Agendar</a>
             </div>
@@ -314,10 +343,14 @@ footer {
     
     <h2>📍 Nuestra ubicación</h2>
     
-    <p>Visítanos en Fernanda Gutierrez Studio, te esperamos 💖</p>
+    <p>Agenda tu cita hoy y luce increíble ✨</p>
+<a href="https://wa.me/526444574772?text=Hola quiero agendar cita" class="btn-main">
+Agendar ahora
+</a>
+
 
     <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.6200344199665!2d-109.96203902389185!3d27.481086235433317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86c83e05c5a065e3%3A0x83c0272f174be451!2sGolfo%20P%C3%A9rsico%201816%2C%20Terras%2C%2085150%20Cdad.%20Obreg%C3%B3n%2C%20Son.%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sus!4v1776750847721!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.6200344199665!2d-109.96203902389185!3d27.481086235433317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86c83e05c5a065e3%3A0x83c0272f174be451!2sGolfo%20P%C3%A9rsico%201816%2C%20Terras%2C%2085150%20Cdad.%20Obreg%C3%B3n%2C%20Son.%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sus!4v1776750847721!5m2!1ses-419!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
             width="100%" height="300"
             style="border:0;"
             loading="lazy">
